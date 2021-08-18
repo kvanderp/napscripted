@@ -1,0 +1,20 @@
+2020/10/05 10:20:38 [notice] 12#12: APP_PROTECT { "event": "configuration_load_s
+tart", "configSetFile": "/opt/app_protect/config/config_set.json" }
+2020/10/05 10:20:38 [notice] 12#12: APP_PROTECT policy 'app_protect_default_poli
+cy' from: /etc/nginx/NginxDefaultPolicy.json compiled successfully
+2020/10/05 10:20:38 [notice] 12#12: APP_PROTECT { "event": "configuration_load_s
+uccess", "software_version": "3.158.1", "user_signatures_packages":[],"attack_si
+gnatures_package":{"revision_datetime":"2020-10-01T17:55:33Z","version":"2020.10
+.01"},"completed_successfully":true,"threat_campaigns_package":{"revision_dateti
+me":"2020-09-24T19:02:26Z","version":"2020.09.24"}}
+2020/10/05 10:20:38 [notice] 12#12: using the "epoll" event method
+2020/10/05 10:20:38 [notice] 12#12: nginx/1.19.0 (nginx-plus-r22)
+2020/10/05 10:20:38 [notice] 12#12: built by gcc 4.8.5 20150623 (Red Hat 4.8.5-3
+9) (GCC) 
+2020/10/05 10:20:38 [notice] 12#12: OS: Linux 4.15.0-1021-aws
+2020/10/05 10:20:38 [notice] 12#12: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2020/10/05 10:20:38 [notice] 12#12: start worker processes
+2020/10/05 10:20:38 [notice] 12#12: start worker process 25
+2020/10/05 10:20:57 [notice] 25#25: APP_PROTECT { "event": "waf_connected", "enf
+orcer_thread_id": 0, "worker_pid": 25, "mode": "operational", "mode_changed": fa
+lse}
