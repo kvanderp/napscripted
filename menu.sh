@@ -16,7 +16,7 @@ select fav in "${choices[@]}"; do
         "Start NAP with default signatures")
             echo "Starting NGINX reverse proxy with NAP, default signatures, no TC"
                   docker build -t app-protect:nosig .
-	          docker run -dit --name app-protect-default -p 80:80 -v /home/ubuntu/nginx.conf:/etc/nginx/nginx.conf app-protect:nosig
+	          docker run -dit --name app-protect-default -p 80:80 -v ~/napscripted/nginx.conf:/etc/nginx/nginx.conf app-protect:nosig
             break
             ;;
         "Pull Update logs from default NAP")
@@ -33,7 +33,7 @@ select fav in "${choices[@]}"; do
         "Kill default NAP and start updated NAP")
             echo "Killing existing NAP, starting new NAP"
             docker kill app-protect-default
-            docker run -dit --name app-protect-tc -p 80:80 -v /home/ubuntu/nginx.conf:/etc/nginx/nginx.conf app-protect:tc
+            docker run -dit --name app-protect-tc -p 80:80 -v ~/napscripted/nginx.conf:/etc/nginx/nginx.conf app-protect:tc
             break
             ;;
         "Pull Update logs from updated NAP")
